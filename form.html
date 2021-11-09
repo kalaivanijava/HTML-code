@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    
+
+
+    
+    <style>
+        table{
+            border:0px solid royalblue;
+            width:400px;
+            border-collapse: collapse;
+            
+        }
+        td,tr{
+             padding:2px; 
+            height: 35px;
+            text-align:left;
+        background-color: snow;}
+            #head{
+                text-align: left;
+                background-color: salmon;
+                text-transform: capitalize;
+                font-size: larger;
+                height:40px;
+            }
+            
+                
+                input[type=submit]{
+                    background-color: lightseagreen;
+                    width:400px;
+                    height:30px;
+                    font-size: larger;
+                    color:lightyellow;
+
+                }
+                #phone{
+                    width:30px;
+                }
+                #span{
+                   color: red; 
+                }
+                #cno{
+                    width:100px;
+                }
+                body{
+                    
+                   margin: 50px; 
+                }
+                #sub:focus{
+                    color:blue;
+                       }
+               #sub:hover{
+                    color:chartreuse; 
+
+               }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr><h2><td id="head" colspan="2">Blogger contest form</td></h2></tr>
+            <tr>
+                <td><label for="fname">name:</label></td>
+                <td><input id="fname" type="text" name="fname" placeholder="first name" required><br>
+                <span>firstname</span></td>
+                <tr><td></td><td><input type="text" name="lname" placeholder="last name"><br>
+                <span>last name</span></td></tr>
+                <tr><td><label for ="pass" >password:</label></td>
+                <td><input id="pass" type="password" name="pass" placeholder="password" required><span id="span">**</span>
+                    <tr><td><label for="mail">Email:</label></td>
+                    <td><input id="mail" type="email" name="mail" required ><br>
+                        
+                        <tr><td><label for ="phone">Phone number:</label></td>
+                        <td><input id="phone" type="number" name="no" maxlength="3" ><span>   </span><input id="cno" type="number" name="no" maxlength="10"><br>
+                        <span>Code </span><span> number   </span></td></tr>
+                        <tr><td><label for="gen">Gender</label></td>
+                        <td><input id="gen" type="radio" name="gender">Male<input type="radio" name="gender">Female</td></tr>
+                        <tr><td><label for="url">Website URL</label></td>
+                        <td><input id="url" ></td></tr>
+                       <tr> <td><label for="msg">Message</label></td><td></td></tr>
+                         <tr><td colspan="2"> <textarea cols="40" rows="5" placeholder="pls leave any msg here"></textarea></td></tr>
+                         <tr><td colspan="2"><input onclick="ok()" id="sub" type="submit" ></td></tr>
+                         <!-- <button onclick="ok()">ok</button>  -->
+
+
+            
+        </table>
+    </form>
+    <script>
+        function ok()
+        {
+            var s=document.getElementsByTagName("input");
+    console.log(s[0].value);
+    console.log(s[1].value);
+    console.log(s[2].value);
+    console.log(s[3].value);
+    
+
+
+
+
+        }
+    </script>
+</body>
+</html>
